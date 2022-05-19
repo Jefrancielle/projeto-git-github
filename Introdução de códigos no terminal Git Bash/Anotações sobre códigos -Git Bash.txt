@@ -1,0 +1,48 @@
+Depois de instalar o Git:
+No GitHub você irá no seu projeto em Code onde irá clonar o seu repositório(HTTPS que é o padrão ou SSH se você tiver uma chave ativada, para não ter que ficar adicionando as credenciais a todo momento).
+
+Depois você irá abrir o terminal do Git Bash, dentro de uma pasta que você criou, com o botão direito dentro da pasta.
+
+O código que iremos usar:
+
+git clone - e ira clicar com o botão direito em PASTE para colar o seu repositório.
+EXEMPLO: git clone https://github.com/mariazinha/projeto-git-github.git 
+Depois de dar o Enter: O terminal irá clonar o seu repositório.
+
+Depois-Você ira na pasta do computador e verá lá o seu projeto criado(pasta criada: .git, README.md)
+
+OBS: Se for a primeira vez que você está usando o Git Bash na sua máquina, provavelmente se você der um git clone, se você estiver no Windows ele vai perguntar se você quer se autenticar via Browser, irá abrir uma aba para você logar no GitHub e ele conseguir vincular a credencial. Agora se você estiver no Linux ou no Mac provavelmente ele vai pedir seu usuário e senha.
+
+CONTINUANDO...
+
+Depois no terminal iremos usar : cd (nome do projeto) : EXEMPLO: projeto-git-github/
+Ele irá entrar dentro do seu repositório, que você deu o nome.
+
+PROXIMO COMANDO
+git status - Você irá verificar se está tudo certo.
+Depois você irá voltar para pasta que está no seu computador e criar uma nova pasta com o nome que você quiser. EXEMPLO: Introdução ao Git e ao GitHub. 
+
+Depois você abre a pasta e com o botão direito do mouse, cria um arquivo.txt (Documento de Texto). Você ira dar um nome e depois irá abrir e digitar o que você quiser ali.
+
+Depois você voltará para o terminal do Git Bash e irá colocar : git status novamente e ali você verá ver que o terminal já entendeu que ali tem uma pasta nova.
+
+PROXIMO COMANDO
+git add . ou git add -A (para adicionar todos os arquivos) 
+ 
+PROXIMO COMANDO
+git status - Ele irá ficar verde e seu terminal já irá entender que aquele arquivo que você criou .txt , você gostaria que ele fosse considerado no controle adversão(Nós adicionamos só no controle adversão local) 
+
+PROXIMO COMANDO
+git commit -m "" (para colocar uma mensagem) Lembre-se que o comentário do commit é muito importante, vocês precisam ter comentários coerentes e que façam sentidos para o que você estão querendo enviar.
+
+PROXIMO COMANDO
+git status novamente - vai aparecer um commit local ali e que o que você quiser enviar ele, vai precisar dar um push
+
+PROXIMO COMANDO
+git push origin main - Quando damos esse comando estaremos enviando todos os commits que nós temos localmente para nuvem, a partir desse momente se vocês voltarem no seu GitHub e der F5 vocês iram ver lá a pastinha que nós criamos local no GitHub e lá vocês conseguem acessar as anotções.
+
+ 
+
+OBS: Se depois que você der o git push origin main e aparecer uma mensagem pedindo o seu username do github e senha.. Você simplesmente irá no seu perfil ir em configurações(Settings) no canto esquerdo lá embaixo, você irá clicar em <>Developer setting, depois em Personal access tokens e vai em Generate new token... Vai aparecer Note - Você escreve o que quiser, vai em expiration e coloca os dias, custom ou no expiration. Depois Select scopes marca o repo e depois lá embaixo clice no botão verde (Generate token) e pronto...Lembrando: Salvem o codigo que aparecer, pois ele aparece só uma vez. E depois é só voltar no terminal do Git Bash e colocar de novo : git push origin main (vai abrir a janela novamente, você coloca o seu username e a senha, que é o token criado).
+
+Bom é isso galeraa!! Até a próxima ;)
